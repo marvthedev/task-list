@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* ====HEADING==== */
+h1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #808080;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.add-task,
+.tasks {
+    width: 75%;
+    padding: 15px 15px;
+}
+
+/* Styles for smaller screens BEGIN */
+@media only screen and (max-width: 600px) {
+    .add-task,
+    .tasks {
+        width: 90%;
+    }
+}
+
+/* Styles for smaller screens END */
+
+.add-task {
+    margin: auto;
+    border: 0.5px solid #E6E6E6;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #9E9E9E;
+    padding-bottom: 10px;
+    
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: black;
+}
+
+/* ====BUTTONS==== */
+.add-task-btn,
+.clear-tasks-btn {
+    padding: 10px 20px;
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.add-task-btn {
+    background: #26A69A;
+    border: 0px solid #000000;
+}
+
+.clear-tasks-btn {
+    background: black;
+}
+
+/* ====LIST OF TASKS==== */
+.tasks {
+    background: white;
+    margin: 10px auto;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.task-list {
+    list-style-type: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.task-list li {
+    border: 1px solid #E0E0E0;
+    padding: 10px 40px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ===REMOVE TOP BORDER OF SECOND - FIFTH LI */
+.task-list li:nth-child(n+2):nth-child(-n+5) {
+    border-top: 0px;
+  }
+
+  /* ===ICONS=== */
+  .fas {
+      color: #26A69A;
+  }
+
