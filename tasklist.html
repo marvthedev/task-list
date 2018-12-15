@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,27 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/tasklist.css"
-</head>
-<body>
-   <div class="grid">
-       <div class="add-task">
-           <h1>Task List</h1>
-           <h3>New Task</h3>
-           <input type="text" placeholder="Enter a new task" class="input-box">
-           <div class="add-btn-container">
-               <input type="submit" value="Add Task" class="add-task-btn">
-            </div>
-       </div>
-       <div class="tasks">
+    <link rel="stylesheet" href="assets/css/tasklist.css" </head> <body>
+    <div class="grid">
+        <div class="add-task">
+            <h1>Task List</h1>
+            <form id="task-form">
+                <label for="input">New Task</label>
+                <input type="text" name="input" id="input-box">
+                <input type="submit" value="Add Task" class="add-task-btn">
+            </form>
+        </div>
+        <div class="tasks">
             <h2>Tasks</h2>
-            <ul class="task-list">
-                <li>Pay Bills <i class="fas fa-times"></i></li>
-                <li>Clean House <i class="fas fa-times"></i></li>
-                <li>Do Laundry <i class="fas fa-times"></i></li>
-                <li>Walk The Dog <i class="fas fa-times"></i></li>
-                <li>Go To Appointment <i class="fas fa-times"></i></li>
-            </ul>
-            <input type="submit" value="Clear Tasks" class="clear-tasks-btn">
-       </div>
-   </div> 
-</body>
+            <form id="insert-form">
+                <label for="insert">Tasks Will Display Here</label>
+                <input type="text" name="insert" id="task-insert">
+            </form>
+            <ul class="task-list"></ul>
+            <a href="#" class="clear-tasks-btn">Clear Tasks</a>
+        </div>
+    </div>
+    <script src="assets/js/tasklist.js"></script>
+    </body>
+
 </html>
