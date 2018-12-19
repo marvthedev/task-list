@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="assets/css/tasklist.css" </head> <body>
     <div class="grid">
         <div class="add-task">
+            <div class="logo">
+            <img src="/img/logogray.png">
+            </div>
             <h1>Task List</h1>
             <form id="task-form">
                 <label for="input">New Task</label>
@@ -22,8 +25,7 @@
         <div class="tasks">
             <h2>Tasks</h2>
             <form id="insert-form">
-                <label for="insert">Tasks Will Display Here</label>
-                <input type="text" name="insert" id="task-insert">
+                <input type="text" name="insert" placeholder="Filter tasks.." id="task-filter">
             </form>
             <ul class="task-list"></ul>
             <a href="#" class="clear-tasks-btn">Clear Tasks</a>

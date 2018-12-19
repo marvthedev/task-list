@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    font-size: 1rem;
 }
 
 /* ====HEADING==== */
@@ -12,14 +13,15 @@ h1 {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    text-align: center;
 }
 
 h2 {
     font-size: 1.2rem;
     font-weight: 700;
-    margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    margin-bottom: 5px;
 }
 
 h3 {
@@ -33,6 +35,18 @@ h3 {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+}
+
+/* LOGO */
+.logo {
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 100%;
 }
 
 .add-task,
@@ -62,14 +76,12 @@ h3 {
 }
 
 #input-box,
-#task-insert {
+#task-filter {
     margin-bottom: 20px;
     width: 100%;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #9E9E9E;
-    
-    
+    border-bottom: 1px solid #9E9E9E;    
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -85,14 +97,13 @@ h3 {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1rem;
-    border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
+    
 }
 
 .add-task-btn {
     background: #00A081;
     border: 0px solid #000000;
+    -webkit-appearance: none;
 }
 
 .clear-tasks-btn {
@@ -117,7 +128,10 @@ h3 {
 
 .task-list li {
     border: 1px solid #E0E0E0;
-    padding: 10px 40px 10px 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.task-item {
     display: flex;
     justify-content: space-between;
 }
@@ -128,7 +142,7 @@ h3 {
   }
 
   /* ===ICONS=== */
-  .fas {
+  .fas:hover {
       color: #26A69A;
   }
 
